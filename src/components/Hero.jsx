@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import profileImg from '../assets/images/profile.jpg'
 import './Hero.css'
 
 function Hero() {
@@ -35,19 +36,26 @@ function Hero() {
         <div className="hero-shape hero-shape-3"></div>
       </div>
       <div className="hero-content">
-        <div className="hero-label">PORTFOLIO 2025</div>
-        <h1 className="hero-title">
-          <span className="hero-title-line">未来を</span>
-          <span className="hero-title-line">創造する</span>
-        </h1>
-        <p className="hero-subtitle">Web Developer / Creative Engineer</p>
-        <p className="hero-description">
-          革新的なアイデアとテクノロジーで、<br />
-          新しい体験を創り出します
-        </p>
-        <div className="hero-scroll-hint">
-          <span>SCROLL</span>
-          <div className="scroll-arrow"></div>
+        <div className="hero-main">
+          <div className="hero-text">
+            <div className="hero-label">PORTFOLIO 2025</div>
+            <h1 className="hero-title">
+              <span className="hero-title-line">大将</span>
+            </h1>
+            <p className="hero-subtitle">Web Developer / Creative Engineer</p>
+            <p className="hero-description">
+              革新的なアイデアとテクノロジーで、<br />
+              新しい体験を創り出します
+            </p>
+            <div className="hero-scroll-hint">
+              <span>SCROLL</span>
+              <div className="scroll-arrow"></div>
+            </div>
+          </div>
+          <div className="hero-image-wrapper">
+            <div className="hero-image-border"></div>
+            <img src={profileImg} alt="大将" className="hero-image" />
+          </div>
         </div>
       </div>
     </section>
