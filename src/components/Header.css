@@ -2,31 +2,12 @@
   background-color: rgba(248, 244, 230, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 2px solid var(--gold-accent);
-  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease;
-}
-
-.header::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--shu-red) 0px,
-    var(--shu-red) 10px,
-    transparent 10px,
-    transparent 20px
-  );
-  opacity: 0.4;
 }
 
 .nav {

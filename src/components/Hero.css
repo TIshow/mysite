@@ -296,7 +296,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 6rem 0 4rem;
+    padding: 10rem 0 4rem;
   }
 
   .hero-content {
@@ -314,8 +314,9 @@
   }
 
   .hero-label {
-    font-size: 0.65rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
   }
 
   .hero-title {
@@ -332,6 +333,10 @@
 
   .hero-image {
     max-width: 250px;
+  }
+
+  .image-frame {
+    padding: 0.75rem;
   }
 
   .hero-shape-1 {
