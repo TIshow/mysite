@@ -1,15 +1,31 @@
 import './Header.css'
 
-function Header() {
+function Header({ scrollToSection }) {
+  const sections = [
+    { name: 'Home', id: 'hero' },
+    { name: 'About', id: 'about' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Contact', id: 'contact' }
+  ]
+
   return (
     <header className="header">
       <nav className="nav">
-        <div className="logo">Portfolio</div>
+        <div className="logo">
+          <span className="logo-text">PORTFOLIO</span>
+          <span className="logo-subtitle">2025</span>
+        </div>
         <ul className="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {sections.map((section, index) => (
+            <li key={index}>
+              <button
+                onClick={() => scrollToSection(section.id)}
+                className="nav-link"
+              >
+                {section.name}
+              </button>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

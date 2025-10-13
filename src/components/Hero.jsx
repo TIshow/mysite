@@ -1,15 +1,54 @@
+import { useEffect, useRef } from 'react'
 import './Hero.css'
 
 function Hero() {
+  const heroRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current)
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current)
+      }
+    }
+  }, [])
+
   return (
-    <section id="hero" className="hero">
+    <section id="hero" className="hero" ref={heroRef}>
+      <div className="hero-background">
+        <div className="hero-shape hero-shape-1"></div>
+        <div className="hero-shape hero-shape-2"></div>
+        <div className="hero-shape hero-shape-3"></div>
+      </div>
       <div className="hero-content">
-        <h1 className="hero-title">こんにちは、私は [あなたの名前] です</h1>
-        <p className="hero-subtitle">Web開発者 / エンジニア</p>
+        <div className="hero-label">PORTFOLIO 2025</div>
+        <h1 className="hero-title">
+          <span className="hero-title-line">未来を</span>
+          <span className="hero-title-line">創造する</span>
+        </h1>
+        <p className="hero-subtitle">Web Developer / Creative Engineer</p>
         <p className="hero-description">
-          素晴らしいWebアプリケーションを作ることに情熱を注いでいます
+          革新的なアイデアとテクノロジーで、<br />
+          新しい体験を創り出します
         </p>
-        <a href="#contact" className="cta-button">お問い合わせ</a>
+        <div className="hero-scroll-hint">
+          <span>SCROLL</span>
+          <div className="scroll-arrow"></div>
+        </div>
       </div>
     </section>
   )

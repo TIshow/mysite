@@ -1,32 +1,66 @@
+import { useEffect, useRef } from 'react'
 import './Skills.css'
 
 function Skills() {
+  const skillsRef = useRef(null)
+
   const skillCategories = [
     {
-      category: 'フロントエンド',
-      skills: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Vite']
+      category: 'Frontend',
+      skills: ['React', 'Vue.js', 'TypeScript', 'Next.js', 'Tailwind CSS']
     },
     {
-      category: 'バックエンド',
-      skills: ['Node.js', 'Express', 'REST API']
+      category: 'Backend',
+      skills: ['Node.js', 'Python', 'GraphQL', 'REST API', 'PostgreSQL']
     },
     {
-      category: 'ツール',
-      skills: ['Git', 'GitHub', 'pnpm', 'VS Code']
+      category: 'Tools',
+      skills: ['Git', 'Docker', 'AWS', 'Figma', 'CI/CD']
+    },
+    {
+      category: 'Design',
+      skills: ['UI/UX', 'Responsive', 'Animation', 'Prototyping', 'Branding']
     }
   ]
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    if (skillsRef.current) {
+      observer.observe(skillsRef.current)
+    }
+
+    return () => {
+      if (skillsRef.current) {
+        observer.unobserve(skillsRef.current)
+      }
+    }
+  }, [])
+
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="skills" ref={skillsRef}>
       <div className="container">
-        <h2 className="section-title">スキル</h2>
+        <div className="skills-header">
+          <span className="section-number">02</span>
+          <h2 className="section-title">Skills</h2>
+        </div>
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
-            <div key={index} className="skill-category">
-              <h3>{category.category}</h3>
+            <div key={index} className="skill-category" style={{ animationDelay: `${index * 0.1}s` }}>
+              <h3 className="category-title">{category.category}</h3>
               <ul className="skill-list">
                 {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="skill-item">
+                    <span className="skill-bullet"></span>
                     {skill}
                   </li>
                 ))}

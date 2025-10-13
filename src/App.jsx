@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,18 +7,36 @@ import Contact from './components/Contact'
 import './App.css'
 
 function App() {
+  const [scrollProgress, setScrollProgress] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight
+      const progress = (window.scrollY / totalHeight) * 100
+      setScrollProgress(progress)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <div className="App">
-      <Header />
+      <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
+      <Header scrollToSection={scrollToSection} />
       <main>
         <Hero />
         <About />
         <Skills />
         <Contact />
       </main>
-      <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-      </footer>
     </div>
   )
 }
