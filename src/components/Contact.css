@@ -3,8 +3,24 @@
   display: flex;
   align-items: center;
   background-color: var(--light-bg);
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 50px,
+      rgba(28, 28, 28, 0.02) 50px,
+      rgba(28, 28, 28, 0.02) 51px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 50px,
+      rgba(28, 28, 28, 0.02) 50px,
+      rgba(28, 28, 28, 0.02) 51px
+    );
   position: relative;
   padding: 6rem 0;
+  border-bottom: 3px solid var(--gold-accent);
 }
 
 .contact .container {
@@ -26,7 +42,28 @@
 }
 
 .contact .section-number {
-  color: rgba(26, 26, 26, 0.1);
+  color: rgba(212, 175, 55, 0.15);
+  font-family: 'Noto Serif JP', serif;
+}
+
+.contact .section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact .title-main {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.contact .title-sub {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
 .contact-content {

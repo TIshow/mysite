@@ -1,14 +1,32 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(248, 244, 230, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--gold-accent);
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--shu-red) 0px,
+    var(--shu-red) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  opacity: 0.4;
 }
 
 .nav {
@@ -28,16 +46,19 @@
 
 .logo-text {
   font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: var(--text-color);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: var(--sumizome);
+  text-shadow: 2px 2px 0px rgba(212, 175, 55, 0.3);
+  font-family: 'Noto Serif JP', serif;
 }
 
 .logo-subtitle {
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  color: var(--text-light);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  color: var(--shu-red);
+  font-family: 'Noto Serif JP', serif;
 }
 
 .nav-links {
@@ -67,13 +88,13 @@
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
+  height: 3px;
+  background: linear-gradient(90deg, var(--shu-red) 0%, var(--gold) 100%);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--shu-red);
 }
 
 .nav-link:hover::after {
@@ -81,11 +102,12 @@
 }
 
 .nav-link.active {
-  color: var(--primary-color);
+  color: var(--indigo);
 }
 
 .nav-link.active::after {
   width: 100%;
+  background: var(--indigo);
 }
 
 @media (max-width: 768px) {

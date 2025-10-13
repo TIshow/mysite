@@ -31,8 +31,11 @@ function Contact() {
     <section id="contact" className="contact" ref={contactRef}>
       <div className="container">
         <div className="contact-header">
-          <span className="section-number">03</span>
-          <h2 className="section-title">Contact</h2>
+          <span className="section-number">参</span>
+          <h2 className="section-title">
+            <span className="title-main">連絡先</span>
+            <span className="title-sub">Contact</span>
+          </h2>
         </div>
         <div className="contact-content">
           <div className="contact-intro">

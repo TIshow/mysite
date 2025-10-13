@@ -7,6 +7,24 @@
   position: relative;
   overflow: hidden;
   padding: 8rem 0 4rem;
+  border-bottom: 3px solid var(--gold-accent);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent-color) 0px,
+    var(--accent-color) 20px,
+    transparent 20px,
+    transparent 40px
+  );
+  opacity: 0.6;
 }
 
 .hero-background {
@@ -27,28 +45,31 @@
 .hero-shape-1 {
   width: 500px;
   height: 500px;
-  background: var(--primary-color);
+  background: radial-gradient(circle, var(--indigo) 0%, transparent 70%);
   top: -200px;
   left: -100px;
   animation-delay: 0s;
+  opacity: 0.2;
 }
 
 .hero-shape-2 {
   width: 400px;
   height: 400px;
-  background: var(--accent-color);
+  background: radial-gradient(circle, var(--shu-red) 0%, transparent 70%);
   bottom: -150px;
   right: -100px;
   animation-delay: 7s;
+  opacity: 0.15;
 }
 
 .hero-shape-3 {
   width: 300px;
   height: 300px;
-  background: var(--primary-color);
+  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
   top: 50%;
   right: 10%;
   animation-delay: 14s;
+  opacity: 0.1;
 }
 
 @keyframes float {
@@ -91,43 +112,103 @@
   flex-direction: column;
 }
 
+.kamon {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.08;
+  animation: float 25s ease-in-out infinite;
+  z-index: 1;
+}
+
+.kamon-1 {
+  top: 10%;
+  right: 15%;
+  animation-delay: 0s;
+}
+
+.kamon-2 {
+  bottom: 15%;
+  left: 10%;
+  animation-delay: 12s;
+}
+
 .hero-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  color: var(--text-light);
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.label-jp {
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  color: var(--sumizome);
   font-weight: 500;
 }
 
+.label-year {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
 .hero-title {
-  font-size: clamp(3rem, 10vw, 8rem);
-  font-weight: 800;
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-weight: 900;
   line-height: 1;
-  margin-bottom: 2rem;
-  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+  letter-spacing: 0.15em;
+  position: relative;
 }
 
 .hero-title-line {
   display: block;
-  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(135deg, var(--sumizome) 0%, var(--indigo) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 3px 3px 0px rgba(212, 175, 55, 0.15);
+}
+
+.title-reading {
+  display: block;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+  color: var(--text-light);
+  letter-spacing: 0.4em;
+  margin-top: 0.5rem;
+  opacity: 0.7;
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  font-weight: 400;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-  letter-spacing: 0.05em;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-weight: 500;
+  color: var(--sumizome);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subtitle-ornament {
+  color: var(--gold);
+  font-weight: 300;
+  font-size: 0.8em;
 }
 
 .hero-description {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  line-height: 1.8;
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  line-height: 2.2;
   color: var(--text-color);
   margin-bottom: 4rem;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 .hero-image-wrapper {
@@ -141,10 +222,13 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 3px solid var(--primary-color);
+  border: 4px solid var(--gold-accent);
   border-radius: 50%;
+  box-shadow:
+    0 0 20px rgba(212, 175, 55, 0.3),
+    inset 0 0 20px rgba(212, 175, 55, 0.1);
   animation: rotate 20s linear infinite;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 @keyframes rotate {
@@ -156,6 +240,17 @@
   }
 }
 
+.image-frame {
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--kinari) 0%, var(--gofun) 100%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 3px var(--gold),
+    0 0 0 6px var(--kinari),
+    0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
 .hero-image {
   width: 100%;
   max-width: 400px;
@@ -163,12 +258,12 @@
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .hero-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .hero-scroll-hint {

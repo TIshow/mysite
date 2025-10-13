@@ -50,8 +50,11 @@ function Skills() {
     <section id="skills" className="skills" ref={skillsRef}>
       <div className="container">
         <div className="skills-header">
-          <span className="section-number">02</span>
-          <h2 className="section-title">Skills</h2>
+          <span className="section-number">弐</span>
+          <h2 className="section-title">
+            <span className="title-main">技術</span>
+            <span className="title-sub">Skills</span>
+          </h2>
         </div>
         <div className="skills-grid">
           {skillCategories.map((category, index) => (

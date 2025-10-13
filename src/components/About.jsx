@@ -31,8 +31,11 @@ function About() {
     <section id="about" className="about" ref={aboutRef}>
       <div className="container">
         <div className="about-header">
-          <span className="section-number">01</span>
-          <h2 className="section-title">About</h2>
+          <span className="section-number">壱</span>
+          <h2 className="section-title">
+            <span className="title-main">自己紹介</span>
+            <span className="title-sub">About</span>
+          </h2>
         </div>
         <div className="about-content">
           <div className="about-text">

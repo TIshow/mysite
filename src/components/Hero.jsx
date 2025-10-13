@@ -34,26 +34,38 @@ function Hero() {
         <div className="hero-shape hero-shape-1"></div>
         <div className="hero-shape hero-shape-2"></div>
         <div className="hero-shape hero-shape-3"></div>
+        <div className="kamon kamon-1">◈</div>
+        <div className="kamon kamon-2">◈</div>
       </div>
       <div className="hero-content">
         <div className="hero-main">
           <div className="hero-text">
-            <div className="hero-label">PORTFOLIO 2025</div>
+            <div className="hero-label">
+              <span className="label-jp">刊行</span>
+              <span className="label-year">二〇二五</span>
+            </div>
             <h1 className="hero-title">
               <span className="hero-title-line">大将</span>
             </h1>
-            <p className="hero-subtitle">永遠の72歳です</p>
+            <p className="hero-subtitle">
+              <span className="subtitle-ornament">—</span>
+              永遠の七十二歳
+              <span className="subtitle-ornament">—</span>
+            </p>
             <p className="hero-description">
-              やる気と向上心ある人はお帰りください。
+              やる気と向上心ある人は<br />
+              お帰りください
             </p>
             <div className="hero-scroll-hint">
-              <span>SCROLL</span>
+              <span>巻物を繰る</span>
               <div className="scroll-arrow"></div>
             </div>
           </div>
           <div className="hero-image-wrapper">
             <div className="hero-image-border"></div>
-            <img src={profileImg} alt="大将" className="hero-image" />
+            <div className="image-frame">
+              <img src={profileImg} alt="大将" className="hero-image" />
+            </div>
           </div>
         </div>
       </div>
