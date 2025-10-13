@@ -42,10 +42,9 @@ function Hero() {
             <h1 className="hero-title">
               <span className="hero-title-line">大将</span>
             </h1>
-            <p className="hero-subtitle">Web Developer / Creative Engineer</p>
+            <p className="hero-subtitle">永遠の72歳です</p>
             <p className="hero-description">
-              革新的なアイデアとテクノロジーで、<br />
-              新しい体験を創り出します
+              やる気と向上心ある人はお帰りください。
             </p>
             <div className="hero-scroll-hint">
               <span>SCROLL</span>
