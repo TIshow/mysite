@@ -109,7 +109,7 @@ function Contact() {
     <section id="contact" className="contact" ref={contactRef}>
       <div className="container">
         <div className="contact-header">
-          <span className="section-number">参</span>
+          <span className="section-number">肆</span>
           <h2 className="section-title">
             <span className="title-main">連絡先</span>
             <span className="title-sub">Contact</span>
