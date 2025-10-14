@@ -294,17 +294,29 @@
   }
 
   .achievements-timeline {
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 2rem 0 3rem 0;
     margin: 0 -1.5rem;
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    /* スクロール領域を確保するため、十分なパディングを追加 */
+    padding-right: calc(100vw - 280px);
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .achievements-timeline::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 1px;
+    height: 1px;
   }
 
   .achievements-timeline::before {
     top: 70px;
-    left: 1.5rem;
-    right: 1.5rem;
+    left: 0;
+    /* 横線を長くする */
+    width: 3200px;
   }
 
   .achievements-timeline::-webkit-scrollbar {
@@ -312,9 +324,9 @@
   }
 
   .year-group {
-    width: 80vw;
-    max-width: 320px;
-    min-width: 280px;
+    /* 固定幅にして確実にスクロール可能に */
+    width: 280px;
+    flex-shrink: 0;
   }
 
   .year-group:first-child {
@@ -322,6 +334,7 @@
   }
 
   .year-group:last-child {
+    /* 最後の年グループに右マージンを追加して余白確保 */
     margin-right: 1.5rem;
   }
 
@@ -335,12 +348,18 @@
 
   .year-items {
     gap: 1rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .achievement-item {
     padding: 1rem;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .achievement-title {
@@ -348,6 +367,15 @@
     line-height: 1.5;
     word-break: break-word;
     overflow-wrap: break-word;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .achievement-category {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
   }
 
   .achievement-link {
