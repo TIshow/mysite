@@ -12,7 +12,7 @@ function Header({ scrollToSection }) {
     <header className="header">
       <nav className="nav">
         <div className="logo">
-          <span className="logo-text">PORTFOLIO</span>
+          <span className="logo-text">齊藤大将</span>
           <span className="logo-subtitle">2025</span>
         </div>
         <ul className="nav-links">

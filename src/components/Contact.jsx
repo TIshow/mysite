@@ -72,7 +72,7 @@ function Contact() {
           </div>
         </div>
         <footer className="contact-footer">
-          <p>&copy; 2025 Portfolio. All rights reserved.</p>
+          <p>&copy; 2025 齊藤大将. All rights reserved.</p>
         </footer>
       </div>
     </section>
