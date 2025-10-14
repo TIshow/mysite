@@ -92,6 +92,11 @@ function Achievements() {
           category: 'メディア',
           title: '電子国家エストニアの現地事情　株式会社シュタインズ齊藤大将さん対談　ヨーロッパの小国の生き残る道',
           url: 'https://youtu.be/iIqKkXDdXj4?si=Er8p17AMi_CDQwIO'
+        },
+        {
+          category: '研究',
+          title: '美術鑑賞におけるVRの活用と観覧者の美術への関心に与える効果に関する調査',
+          url: 'https://www.jstage.jst.go.jp/article/vconf/2022/0/2022_119/_article/-char/ja/'
         }
       ]
     },
@@ -180,6 +185,8 @@ function Achievements() {
         return '🎤'
       case '展示':
         return '🎨'
+      case '研究':
+        return '🧪'
       default:
         return '✨'
     }
@@ -191,7 +198,10 @@ function Achievements() {
         <div className="achievements-header">
           <span className="section-number">肆</span>
           <h2 className="section-title">
-            <span className="title-main">受賞歴・メディア取材・登壇等</span>
+            <span className="title-main">
+              <span className="title-full">受賞歴・メディア取材・登壇等</span>
+              <span className="title-short">受賞歴・メディア等</span>
+            </span>
             <span className="title-sub">Achievements & Media</span>
           </h2>
         </div>
