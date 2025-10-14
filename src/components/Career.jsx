@@ -17,7 +17,7 @@ function Career() {
     },
     {
       period: '2016-2018-2021',
-      title: 'タリン工科大学',
+      title: 'タリン工科大学 Applied Physics',
       location: 'エストニア・タリン',
       details: [
         '学部トップ成績で入学、エストニア政府から給付金を獲得（翌年教授と喧嘩し剥奪）',

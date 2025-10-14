@@ -37,7 +37,6 @@
 
 .career .section-number {
   color: rgba(255, 255, 255, 0.15);
-  font-family: 'Noto Serif JP', serif;
 }
 
 .career .section-title {
@@ -49,18 +48,8 @@
   gap: 0.5rem;
 }
 
-.career .title-main {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  letter-spacing: 0.15em;
-}
-
 .career .title-sub {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 300;
-  letter-spacing: 0.3em;
   opacity: 0.7;
-  text-transform: uppercase;
 }
 
 .career-timeline {
@@ -197,18 +186,6 @@
     margin-bottom: 2rem;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .career .section-number {
-    font-size: clamp(3rem, 12vw, 5rem);
-  }
-
-  .career .title-main {
-    font-size: clamp(1.8rem, 6vw, 2.5rem);
-  }
-
-  .career .title-sub {
-    font-size: clamp(0.8rem, 2vw, 1rem);
   }
 
   .career-timeline {

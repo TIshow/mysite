@@ -68,8 +68,41 @@ html {
   letter-spacing: 0.05em;
 }
 
+/* 共通セクションスタイル */
+.section-number {
+  font-size: clamp(5rem, 10vw, 10rem);
+  font-weight: 900;
+  line-height: 1;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.title-main {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.title-sub {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1.5rem;
+  }
+
+  .section-number {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .title-main {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .title-sub {
+    font-size: clamp(0.8rem, 2vw, 1rem);
   }
 }

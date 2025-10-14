@@ -43,7 +43,6 @@
 
 .works .section-number {
   color: rgba(212, 175, 55, 0.15);
-  font-family: 'Noto Serif JP', serif;
 }
 
 .works .section-title {
@@ -52,18 +51,8 @@
   gap: 0.5rem;
 }
 
-.works .title-main {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  letter-spacing: 0.15em;
-}
-
 .works .title-sub {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 300;
-  letter-spacing: 0.3em;
   opacity: 0.6;
-  text-transform: uppercase;
 }
 
 .works-grid {
@@ -206,18 +195,6 @@
     margin-bottom: 2rem;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .works .section-number {
-    font-size: clamp(3rem, 12vw, 5rem);
-  }
-
-  .works .title-main {
-    font-size: clamp(1.8rem, 6vw, 2.5rem);
-  }
-
-  .works .title-sub {
-    font-size: clamp(0.8rem, 2vw, 1rem);
   }
 
   .works-grid {
