@@ -112,6 +112,16 @@ function Achievements() {
           category: 'メディア',
           title: 'VR美術展 現実以上！？ 3D空間に作品展示',
           url: 'https://www.asahi.com/articles/ASP767RM1P76PTLC003.html'
+        },
+        {
+          category: '受賞',
+          title: '【瀬戸内チャレンジャーアワード】ファイナリストNo.5 齊藤 大将さん',
+          url: 'https://note.com/setouchiibase/n/n75a318bfffd0'
+        },
+        {
+          category: '受賞',
+          title: 'いざ鎌倉！JAPAN CHALLENGER AWARD 2021 in 建⻑寺 ファイナリスト',
+          url: 'https://japan-challenger-project.com/projects/projects-1462/#:~:text=%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E4%BA%94%E7%95%AA%E3%80%80%E6%96%89%E8%97%A4%E5%A4%A7%E5%B0%86%E3%81%95%E3%82%93'
         }
       ]
     },
