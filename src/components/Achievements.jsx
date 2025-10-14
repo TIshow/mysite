@@ -199,8 +199,8 @@ function Achievements() {
           <span className="section-number">肆</span>
           <h2 className="section-title">
             <span className="title-main">
-              <span className="title-full">受賞歴・メディア取材・登壇等</span>
-              <span className="title-short">受賞歴・メディア等</span>
+              <span className="title-full">受賞歴・取材・登壇等</span>
+              <span className="title-short">受賞歴・取材等</span>
             </span>
             <span className="title-sub">Achievements & Media</span>
           </h2>
