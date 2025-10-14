@@ -6,6 +6,7 @@ import Career from './components/Career'
 import Works from './components/Works'
 import Achievements from './components/Achievements'
 import Skills from './components/Skills'
+import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import './App.css'
 
@@ -41,6 +42,7 @@ function App() {
         <Works />
         <Achievements />
         <Skills />
+        <Hobbies />
         <Contact />
       </main>
     </div>
