@@ -17,6 +17,11 @@ function Achievements() {
           category: 'メディア',
           title: '高校の“マンガ学科”の授業にメタバースを活用 HIKKYが熊本県高森町と包括連携協定',
           url: 'https://www.moguravr.com/hikky-takamori-metaverse-partnership/'
+        },
+        {
+          category: 'メディア',
+          title: 'AIとデータ分析を活用した新しいIR支援サービスを開始！「高出来高企業」に関する独自調査を実施',
+          url: 'https://www.atpress.ne.jp/news/446158'
         }
       ]
     },
