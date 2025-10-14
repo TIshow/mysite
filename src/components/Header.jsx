@@ -4,7 +4,7 @@ function Header({ scrollToSection }) {
   const sections = [
     { name: 'Home', id: 'hero' },
     { name: 'About', id: 'about' },
-    { name: 'Skills', id: 'skills' },
+    { name: 'Career', id: 'career' },
     { name: 'Contact', id: 'contact' }
   ]
 
