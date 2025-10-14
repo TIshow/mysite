@@ -41,33 +41,43 @@ function About() {
           <div className="about-text">
             <div className="about-intro">
               <p className="about-lead">
-                テクノロジーとデザインの<br />
-                交差点で価値を創造する
+                感性と科学のあわいで<br />
+                世界の構造を探る
               </p>
             </div>
             <div className="about-description">
               <p>
-                私はWeb開発に情熱を持つエンジニアです。
-                モダンな技術を使って、ユーザーにとって価値のあるアプリケーションを作ることを目指しています。
+                世界をゆるく解析しています。<br />
+                物理学と人文学のあいだをふらふらと漂っていたら、<br />
+                結局どちらの世界にも馴染めなかった者です。<br />
+                誰か救ってください。
               </p>
               <p>
-                常に新しい技術を学び、より良いコードを書くことに挑戦しています。
-                チームでの開発やオープンソースへの貢献も積極的に行っています。
+                テクノロジーや科学を"効率の道具"としてではなく、<br />
+                思考や感情をたまにバグらせる詩的装置として扱っています。
+              </p>
+              <p>
+                大学の研究では、データ解析を通して文学の構造を読み解き、<br />
+                創作では、アルゴリズムの中に感性を織り込む。
+              </p>
+              <p>
+                ──理論と直感、秩序と揺らぎ。<br />
+                その両方の交点に「美しさ」が宿ると信じています。<br />
               </p>
             </div>
           </div>
           <div className="about-stats">
             <div className="stat-item">
-              <div className="stat-number">5+</div>
-              <div className="stat-label">Years Experience</div>
+              <div className="stat-number">186.5cm</div>
+              <div className="stat-label">Height</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Projects Completed</div>
+              <div className="stat-number">80%</div>
+              <div className="stat-label">Introversion Index</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">20+</div>
-              <div className="stat-label">Happy Clients</div>
+              <div className="stat-number">9.26</div>
+              <div className="stat-label">Birthday</div>
             </div>
           </div>
         </div>

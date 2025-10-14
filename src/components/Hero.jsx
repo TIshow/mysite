@@ -53,13 +53,9 @@ function Hero() {
               <span className="subtitle-ornament">—</span>
             </p>
             <p className="hero-description">
-              やる気と向上心ある人は<br />
-              お帰りください
+              やる気と向上心のある人は<br />
+              お帰りください。
             </p>
-            <div className="hero-scroll-hint">
-              <span>巻物を繰る</span>
-              <div className="scroll-arrow"></div>
-            </div>
           </div>
           <div className="hero-image-wrapper">
             <div className="hero-image-border"></div>

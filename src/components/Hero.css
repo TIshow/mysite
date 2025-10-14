@@ -266,16 +266,6 @@
   transform: scale(1.02);
 }
 
-.hero-scroll-hint {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: var(--text-light);
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  font-weight: 500;
-}
-
 .scroll-arrow {
   width: 24px;
   height: 24px;
