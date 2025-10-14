@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
-import Skills from './components/Skills'
+import Career from './components/Career'
 import Contact from './components/Contact'
 import './App.css'
 
@@ -34,7 +34,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Skills />
+        <Career />
         <Contact />
       </main>
     </div>
