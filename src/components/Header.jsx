@@ -7,6 +7,7 @@ function Header({ scrollToSection }) {
     { name: 'Career', id: 'career' },
     { name: 'Works', id: 'works' },
     { name: 'Achievements', id: 'achievements' },
+    { name: 'Skills', id: 'skills' },
     { name: 'Contact', id: 'contact' }
   ]
 
