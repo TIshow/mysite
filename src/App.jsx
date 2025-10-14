@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Career from './components/Career'
 import Works from './components/Works'
+import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import './App.css'
 
@@ -37,6 +38,7 @@ function App() {
         <About />
         <Career />
         <Works />
+        <Achievements />
         <Contact />
       </main>
     </div>
