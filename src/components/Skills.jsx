@@ -52,8 +52,8 @@ function Skills() {
         <div className="skills-header">
           <span className="section-number">弐</span>
           <h2 className="section-title">
-            <span className="title-main">技術</span>
-            <span className="title-sub">Skills</span>
+            <span className="title-main">実装</span>
+            <span className="title-sub">Works</span>
           </h2>
         </div>
         <div className="skills-grid">
