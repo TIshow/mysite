@@ -48,6 +48,16 @@ function Achievements() {
           title: '佐賀映画「つ。」、映画を新たな視点で楽しめる架空佐賀？メタバース「SAGALAND」を現役東大生が作成し公開。1日限定イベント・メタバース試写会も開催。',
           url: 'https://www.the-miyanichi.co.jp/special/prtimes/display.php?fileName=c83759_r10'
         },
+        {
+          category: '登壇',
+          title: 'EDIX東京2024 登壇',
+          url: 'https://steins.works/2024/07/09/edix2024/'
+        },
+        {
+          category: 'メディア',
+          title: 'メタバースの学校で見えた教育の可能性',
+          url: 'https://school-security.jp/column/2024/07/%E3%83%A1%E3%82%BF%E3%83%90%E3%83%BC%E3%82%B9%E3%81%AE%E5%AD%A6%E6%A0%A1%E3%81%A7%E8%A6%8B%E3%81%88%E3%81%9F%E6%95%99%E8%82%B2%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7/'
+        },
       ]
     },
     {
@@ -67,6 +77,11 @@ function Achievements() {
           category: 'メディア',
           title: '企業と人材 2023.06月号 掲載',
           url: 'https://www.fujisan.co.jp/product/1281680140/b/2400375/'
+        },
+        {
+          category: 'メディア',
+          title: '共同通信社 取材',
+          url: 'https://steins.works/2023/12/01/%e5%bc%8a%e7%a4%be%e4%bb%a3%e8%a1%a8%e3%81%ae%e9%bd%8a%e8%97%a4%e3%81%8c%e5%85%b1%e5%90%8c%e9%80%9a%e4%bf%a1%e7%a4%be%e3%81%8b%e3%82%89%e5%8f%96%e6%9d%90%e3%82%92%e5%8f%97%e3%81%91%e3%81%a6%e6%96%b0/'
         },
         {
           category: 'メディア',
@@ -142,6 +157,16 @@ function Achievements() {
           category: 'メディア',
           title: '特集 : 現実を超える「仮想世界」の今—開発者が語るVRトレンド最前線',
           url: 'https://japan.cnet.com/sp/vr_trend/'
+        },
+        {
+          category: '登壇',
+          title: '「エストニアから学ぶ『スタートアップ』が次々と生まれるまちとは」～まちの大学忘年会イベント2020～',
+          url: 'https://machinocircle10.peatix.com/'
+        },
+         {
+          category: '登壇',
+          title: '長崎デジタルコンテスト2020',
+          url: 'https://digicon.me/'
         }
       ]
     },

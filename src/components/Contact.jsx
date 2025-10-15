@@ -118,11 +118,12 @@ function Contact() {
         <div className="contact-content">
           <div className="contact-intro">
             <p className="contact-lead">
-              プロジェクトのご相談、<br />
+              仕事のご相談に限らず、<br />
+              雑談したいお茶したい等、<br />
               お気軽にご連絡ください
             </p>
             <p className="contact-description">
-              新しいプロジェクトやコラボレーションの機会を常に歓迎しています。
+              友達を常に歓迎しています。
             </p>
           </div>
           <div className="social-icons">
