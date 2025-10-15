@@ -15,12 +15,11 @@ function Hobbies() {
       { name: 'VR', icon: '🥽' },
       { name: 'Beatbox', icon: '🎤' },
       { name: 'Magic', icon: '🪄' },
-      { name: '自炊', icon: '🍳' },
       { name: 'プログラミング', icon: '💻' },
       { name: 'データ分析', icon: '📊' },
       { name: '株', icon: '📈' },
       { name: '香水', icon: '🌸' },
-      { name: 'コスプレ', icon: '🎭' }
+      { name: 'コスプレ（昔）', icon: '🎭' }
     ],
     favorites: [
       {
@@ -28,7 +27,7 @@ function Hobbies() {
         icon: '🎵',
         items: [
           'Rage Against the Machine', 'Slipknot', 'Bullet For My Valentine',
-          'System of a Down', 'The Agonist', 'All That Remains', 'Queen',
+          'System of a Down', 'Falling In Reverse', 'The Agonist', 'All That Remains', 'Queen',
           'Led Zeppelin', 'Linkin Park', 'Eric Clapton', 'The Fratellis',
           'The Offspring', 'ギルガメッシュ', 'KIZU', 'GLAY', '己龍',
           '摩天楼オペラ', 'ジグザグ'
@@ -65,27 +64,10 @@ function Hobbies() {
         icon: '✒️',
         items: [
           '寺田寅彦', '安部公房', '坂口安吾', '岡潔', '村田沙耶香',
-          'スティーブンキング', 'アガサクリスティ', 'ジョージ・オーウェル',
-          'レイチェルカーソン'
+          'スティーブン・キング', 'イタロ・カルヴィーノ', 'アガサ・クリスティ', 'ジョージ・オーウェル',
+          'レイチェル・カーソン'
         ]
       },
-      {
-        category: 'テニス選手',
-        icon: '🏆',
-        items: [
-          'キリオス', 'ヒューイット', 'シャポバロフ', 'ズべレフ', 'ブブリク',
-          'ダスティン・ブラウン', '国枝慎吾', 'アンナ・スモリナ',
-          'マリア・キリレンコ', 'サニア・ミルザ'
-        ]
-      },
-      {
-        category: '尊敬する人',
-        icon: '🌟',
-        items: [
-          'リチャード・ファインマン', '寺田寅彦', '安部公房', '坂口安吾',
-          '岡潔', 'オスカー・シンドラー', 'トム・モレロ', '岩田聡', 'マイメロママ'
-        ]
-      }
     ]
   }
 
