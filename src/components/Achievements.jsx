@@ -9,6 +9,16 @@ function Achievements() {
       year: '2025',
       items: [
         {
+          category: '登壇',
+          title: 'IR向上委員会×note共催 IR担当者向けセミナー',
+          url: 'https://finance.logmi.jp/articles/383579'
+        },
+        {
+          category: '受賞',
+          title: '西山動物園オープンデータ活用プログラミングコンテストファイナリスト',
+          url: 'https://www.city.sabae.fukui.jp/about_city/it_nomachi/opendate/kesshoshinsakai.html'
+        },
+        {
           category: '展示',
           title: '「INVISIBLE MUSEUM-見えない大切な何かを探す展」vol.3 アート出展',
           url: 'https://zounohana.com/events/post-8736/'
