@@ -49,12 +49,12 @@ function Hero() {
             </h1>
             <p className="hero-subtitle">
               <span className="subtitle-ornament">—</span>
-              永遠の七十二歳
+              Scientist failure
               <span className="subtitle-ornament">—</span>
             </p>
             <p className="hero-description">
-              やる気と向上心のある人は<br />
-              お帰りください。
+              テニス、コーヒー、V系、美人、<br />
+              懐手して宇宙見物
             </p>
           </div>
           <div className="hero-image-wrapper">

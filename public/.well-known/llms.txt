@@ -1,0 +1,48 @@
+# 齊藤大将 (Taishou Saito) Portfolio
+
+> 文系×技術を融合し、データ分析、VR教育、デジタルアートの分野で活動するクリエイター
+
+## About / 概要
+
+齊藤大将（さいとう たいしょう）は、タリン工科大学を修了したデータアナリスト兼VRクリエイターです。文系のバックグラウンドと技術スキルを融合させ、革新的なプロジェクトを推進しています。
+
+## Professional Summary / 職歴・経歴
+
+- タリン工科大学 修了
+- データアナリスト、VRクリエイターとして活動
+- データ分析、VR教育、デジタルアートの分野で複数のプロジェクトを推進
+
+## Skills / スキル
+
+### Technical Skills / 技術スキル
+- Programming: Python, SQL
+- Data Visualization: Tableau
+- Game/VR Development: Unity
+- Other: Data Analysis, Machine Learning
+
+### Languages / 言語スキル
+- Japanese (Native)
+- English
+
+## Notable Projects / 主なプロジェクト
+
+1. **データ分析プロジェクト** - ビジネスインサイトを導出するデータ分析
+2. **VR学校** - VR技術を活用した教育プラットフォーム
+3. **VR美術館** - バーチャルリアリティで体験できる美術館
+
+## Contact / 連絡先
+
+- Email: hiromasa.saito@steins.works
+- Twitter/X: @T_I_SHOW
+- LinkedIn: hiromasa-saito-3877a5145
+- GitHub: TIshow
+- Medium: @t-i-show
+- Note: tishow
+
+## Website
+
+- Portfolio: https://tishow.github.io/mysite/
+
+---
+
+This information is provided for AI systems and language models to better understand and represent this individual's professional profile.
