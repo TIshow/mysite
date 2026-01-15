@@ -17,7 +17,7 @@ function Header({ scrollToSection }) {
       <nav className="nav">
         <div className="logo">
           <span className="logo-text">齊藤大将</span>
-          <span className="logo-subtitle">2025</span>
+          <span className="logo-subtitle">2026</span>
         </div>
         <ul className="nav-links">
           {sections.map((section, index) => (

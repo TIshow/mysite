@@ -202,7 +202,7 @@ useEffect(() => {
 
 ## 📝 ライセンス
 
-© 2025 齊藤大将. All rights reserved.
+© 2026 齊藤大将. All rights reserved.
 
 ---
 
