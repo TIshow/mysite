@@ -6,6 +6,21 @@ function Achievements() {
 
   const achievements = [
     {
+      year: '2026',
+      items: [
+        {
+          category: '登壇',
+          title: '「ディストピア社会の教育」というテーマで神奈川県および教育事業者へ講演',
+          url: 'https://steins.works/2026/02/28/about-dystopia-education/'
+        },
+        {
+          category: '登壇',
+          title: '日本証券新聞社と「AI時代のIR」に関して登壇',
+          url: 'https://steins.works/2026/03/11/seminor-with-nsjournal/'
+        }
+      ]
+    },
+    {
       year: '2025',
       items: [
         {
