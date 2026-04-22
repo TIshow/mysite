@@ -146,7 +146,7 @@ function Contact() {
           </div>
         </div>
         <footer className="contact-footer">
-          <p>&copy; 2026 {t('Hiromasa Saito', '齊藤大将')}. All rights reserved.</p>
+          <p>&copy; 2026 齊藤大将 (Hiromasa Saito). All rights reserved.</p>
         </footer>
       </div>
     </section>

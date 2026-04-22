@@ -48,7 +48,8 @@ function Hero() {
               <span className="label-year">{t('2026', '二〇二六')}</span>
             </div>
             <h1 className="hero-title">
-              <span className="hero-title-line">{t('HIROMASA', '大将')}</span>
+              <span className="hero-title-line">大将</span>
+              <span className="hero-title-sub">HIROMASA</span>
             </h1>
             <p className="hero-subtitle">
               <span className="subtitle-ornament">—</span>

@@ -19,7 +19,8 @@ function Header({ scrollToSection }) {
     <header className="header">
       <nav className="nav">
         <div className="logo">
-          <span className="logo-text">{lang === 'en' ? 'Hiromasa Saito' : '齊藤大将'}</span>
+          <span className="logo-text">齊藤大将</span>
+          <span className="logo-roman">Hiromasa Saito</span>
         </div>
         <ul className="nav-links">
           {sections.map((section, index) => (
