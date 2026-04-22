@@ -126,7 +126,7 @@ function Hobbies() {
           {/* 好きなものリスト */}
           <div className="favorites-section">
             <h3 className="subsection-title">好きなもの</h3>
-            <p className="favorites-quote">イチゴ、コーヒー、花、美人、懐手（ふところで）して宇宙見物</p>
+            <p className="favorites-quote">テニス、コーヒー、V系、美人、懐手して宇宙見物</p>
             <div className="favorites-grid">
               {hobbiesData.favorites.map((favorite, categoryIndex) => (
                 <div
