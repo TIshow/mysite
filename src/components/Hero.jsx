@@ -1,9 +1,12 @@
 import { useEffect, useRef } from 'react'
 import profileImg from '../assets/images/profile.jpg'
+import { useLang } from '../contexts/LanguageContext'
 import './Hero.css'
 
 function Hero() {
   const heroRef = useRef(null)
+  const { lang } = useLang()
+  const t = (en, ja) => lang === 'en' ? en : ja
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,8 +44,8 @@ function Hero() {
         <div className="hero-main">
           <div className="hero-text">
             <div className="hero-label">
-              <span className="label-jp">刊行</span>
-              <span className="label-year">二〇二五</span>
+              <span className="label-jp">{t('Portfolio', '刊行')}</span>
+              <span className="label-year">{t('2025', '二〇二五')}</span>
             </div>
             <h1 className="hero-title">
               <span className="hero-title-line">大将</span>
@@ -53,8 +56,10 @@ function Hero() {
               <span className="subtitle-ornament">—</span>
             </p>
             <p className="hero-description">
-              テニス、コーヒー、V系、美人、<br />
-              懐手して宇宙見物
+              {t(
+                <>Tennis, Coffee, Visual Kei, Beautiful People,<br />Hands in Sleeves Watching the Universe</>,
+                <>テニス、コーヒー、V系、美人、<br />懐手して宇宙見物</>
+              )}
             </p>
           </div>
           <div className="hero-image-wrapper">

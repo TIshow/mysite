@@ -1,8 +1,11 @@
 import { useEffect, useRef } from 'react'
+import { useLang } from '../contexts/LanguageContext'
 import './Contact.css'
 
 function Contact() {
   const contactRef = useRef(null)
+  const { lang } = useLang()
+  const t = (en, ja) => lang === 'en' ? en : ja
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -111,19 +114,20 @@ function Contact() {
         <div className="contact-header">
           <span className="section-number">柒</span>
           <h2 className="section-title">
-            <span className="title-main">連絡先</span>
+            <span className="title-main">{t('Contact', '連絡先')}</span>
             <span className="title-sub">Contact</span>
           </h2>
         </div>
         <div className="contact-content">
           <div className="contact-intro">
             <p className="contact-lead">
-              仕事のご相談に限らず、<br />
-              雑談したいお茶したい等、<br />
-              お気軽にご連絡ください
+              {t(
+                <>Feel free to reach out — not just for business,<br />but also for casual chats or coffee.</>,
+                <>仕事のご相談に限らず、<br />雑談したいお茶したい等、<br />お気軽にご連絡ください</>
+              )}
             </p>
             <p className="contact-description">
-              友達を常に歓迎しています。
+              {t('Always welcoming new friends.', '友達を常に歓迎しています。')}
             </p>
           </div>
           <div className="social-icons">

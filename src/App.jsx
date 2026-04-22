@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { LanguageProvider } from './contexts/LanguageContext'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -32,20 +33,22 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
-      <Header scrollToSection={scrollToSection} />
-      <main>
-        <Hero />
-        <About />
-        <Career />
-        <Works />
-        <Achievements />
-        <Skills />
-        <Hobbies />
-        <Contact />
-      </main>
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
+        <Header scrollToSection={scrollToSection} />
+        <main>
+          <Hero />
+          <About />
+          <Career />
+          <Works />
+          <Achievements />
+          <Skills />
+          <Hobbies />
+          <Contact />
+        </main>
+      </div>
+    </LanguageProvider>
   )
 }
 

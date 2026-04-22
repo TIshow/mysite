@@ -1,15 +1,18 @@
+import { useLang } from '../contexts/LanguageContext'
 import './Header.css'
 
 function Header({ scrollToSection }) {
+  const { lang, toggle } = useLang()
+
   const sections = [
-    { name: 'Home', id: 'hero' },
-    { name: 'About', id: 'about' },
-    { name: 'Career', id: 'career' },
-    { name: 'Works', id: 'works' },
-    { name: 'Achievements', id: 'achievements' },
-    { name: 'Skills', id: 'skills' },
-    { name: 'Hobbies', id: 'hobbies' },
-    { name: 'Contact', id: 'contact' }
+    { en: 'Home', ja: 'Home', id: 'hero' },
+    { en: 'About', ja: 'About', id: 'about' },
+    { en: 'Career', ja: 'Career', id: 'career' },
+    { en: 'Works', ja: 'Works', id: 'works' },
+    { en: 'Achievements', ja: '受賞歴', id: 'achievements' },
+    { en: 'Skills', ja: 'Skills', id: 'skills' },
+    { en: 'Hobbies', ja: '趣味', id: 'hobbies' },
+    { en: 'Contact', ja: 'Contact', id: 'contact' }
   ]
 
   return (
@@ -26,11 +29,14 @@ function Header({ scrollToSection }) {
                 onClick={() => scrollToSection(section.id)}
                 className="nav-link"
               >
-                {section.name}
+                {section[lang]}
               </button>
             </li>
           ))}
         </ul>
+        <button className="lang-toggle" onClick={toggle} aria-label="Toggle language">
+          {lang === 'en' ? 'JA' : 'EN'}
+        </button>
       </nav>
     </header>
   )

@@ -1,8 +1,11 @@
 import { useEffect, useRef } from 'react'
+import { useLang } from '../contexts/LanguageContext'
 import './Skills.css'
 
 function Skills() {
   const skillsRef = useRef(null)
+  const { lang } = useLang()
+  const t = (en, ja) => lang === 'en' ? en : ja
 
   const skillCategories = [
     {
@@ -28,8 +31,8 @@ function Skills() {
       title: 'Soft Skills',
       titleJa: '素養',
       skills: [
-        { name: 'Writing', description: '執筆・文章表現' },
-        { name: 'Challenging', description: '挑戦する姿勢' }
+        { name: 'Writing', description: { en: 'Writing & Expression', ja: '執筆・文章表現' } },
+        { name: 'Challenging', description: { en: 'Challenging Spirit', ja: '挑戦する姿勢' } }
       ]
     }
   ]
@@ -63,7 +66,7 @@ function Skills() {
         <div className="skills-header">
           <span className="section-number">伍</span>
           <h2 className="section-title">
-            <span className="title-main">技能</span>
+            <span className="title-main">{t('Skills', '技能')}</span>
             <span className="title-sub">Skills</span>
           </h2>
         </div>
@@ -101,7 +104,9 @@ function Skills() {
                         <div className="skill-level">{skill.level}</div>
                       )}
                       {skill.description && (
-                        <div className="skill-description">{skill.description}</div>
+                        <div className="skill-description">
+                          {typeof skill.description === 'object' ? skill.description[lang] : skill.description}
+                        </div>
                       )}
                     </div>
                   </div>

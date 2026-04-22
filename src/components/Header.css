@@ -136,6 +136,33 @@
   }
 }
 
+.lang-toggle {
+  background: none;
+  border: 1.5px solid var(--shu-red);
+  color: var(--shu-red);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.lang-toggle:hover {
+  background: var(--shu-red);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .lang-toggle {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
+  }
+}
+
 @media (max-width: 480px) {
   .nav {
     padding: 0.75rem 1rem;
