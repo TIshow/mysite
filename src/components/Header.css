@@ -19,6 +19,7 @@
   padding: 1.5rem 4rem;
 }
 
+/* ロゴ：デスクトップは縦積み */
 .logo {
   display: flex;
   flex-direction: column;
@@ -42,6 +43,7 @@
   font-family: 'Noto Serif JP', serif;
 }
 
+/* ナビリンク */
 .nav-links {
   display: flex;
   list-style: none;
@@ -91,6 +93,106 @@
   background: var(--indigo);
 }
 
+/* 言語トグル + ハンバーガーをまとめるコンテナ */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* 言語トグル */
+.lang-toggle {
+  background: none;
+  border: 1.5px solid var(--shu-red);
+  color: var(--shu-red);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  transition: all 0.25s ease;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.lang-toggle:hover {
+  background: var(--shu-red);
+  color: #fff;
+}
+
+/* ハンバーガーボタン：デスクトップでは非表示 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--sumizome);
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* モバイルメニュー（ドロップダウン） */
+.mobile-menu {
+  display: none;
+  background-color: rgba(248, 244, 230, 0.98);
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 0.75rem 0 1rem;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.mobile-nav-link {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  padding: 0.65rem 2rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--shu-red);
+  background: rgba(214, 69, 69, 0.05);
+}
+
 @media (max-width: 1024px) {
   .nav-links {
     gap: 2rem;
@@ -103,63 +205,45 @@
 
 @media (max-width: 768px) {
   .nav {
-    padding: 1rem 1.5rem;
-    flex-wrap: wrap;
-    gap: 0.5rem 0;
+    padding: 0.9rem 1.25rem;
   }
 
+  /* ロゴ：スマホでは横並び */
   .logo {
-    order: 1;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.6rem;
     flex: 1;
-    text-align: left;
   }
 
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+  }
+
+  .logo-roman {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* デスクトップ用ナビリンクを非表示 */
+  .nav-links {
+    display: none;
+  }
+
+  /* ハンバーガーを表示 */
+  .hamburger {
+    display: flex;
   }
 
   .lang-toggle {
-    order: 2;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
   }
 
-  .nav-links {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 0.25rem 0 0;
+  /* モバイルメニュードロップダウンを表示 */
+  .mobile-menu {
+    display: block;
   }
-
-  .nav-links li {
-    flex-shrink: 0;
-  }
-
-  .nav-link {
-    font-size: 0.7rem;
-    padding: 0.4rem 0;
-    white-space: nowrap;
-  }
-}
-
-.lang-toggle {
-  background: none;
-  border: 1.5px solid var(--shu-red);
-  color: var(--shu-red);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  padding: 0.3rem 0.7rem;
-  border-radius: 3px;
-  transition: all 0.25s ease;
-  flex-shrink: 0;
-  font-family: 'Noto Serif JP', serif;
-}
-
-.lang-toggle:hover {
-  background: var(--shu-red);
-  color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -168,21 +252,11 @@
   }
 
   .logo-text {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
-  .logo-subtitle {
-    font-size: 0.6rem;
-  }
-
-  .nav-links {
-    gap: 0.5rem;
-    row-gap: 0.5rem;
-  }
-
-  .nav-link {
-    font-size: 0.65rem;
-    padding: 0.3rem 0;
+  .logo-roman {
+    font-size: 0.55rem;
   }
 
   .lang-toggle {
