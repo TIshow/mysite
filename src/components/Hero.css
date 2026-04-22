@@ -163,6 +163,7 @@
   margin-bottom: 1rem;
   letter-spacing: 0.15em;
   position: relative;
+  width: fit-content;
 }
 
 .hero-title-line {
