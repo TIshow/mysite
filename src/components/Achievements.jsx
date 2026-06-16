@@ -26,6 +26,14 @@ function Achievements() {
             ja: '日本証券新聞社と「AI時代のIR」に関して登壇'
           },
           url: 'https://steins.works/2026/03/11/seminor-with-nsjournal/'
+        },
+        {
+          category: { en: 'Media', ja: 'メディア' },
+          title: {
+            en: 'Interview by Nihon Shoken Shimbun: "The State of IR Communications in the Age of AI — Asking Steins CEO Taisho Saito"',
+            ja: '日本証券新聞社によるインタビュー「AI時代のIR発信の在り方　シュタインズ 齊藤大将代表取締役に聞く」'
+          },
+          url: 'https://www.nsjournal.jp/%E3%80%90%E9%80%9F%E5%A0%B1%E7%89%88%E3%80%91ai%E6%99%82%E4%BB%A3%E3%81%AEir%E7%99%BA%E4%BF%A1%E3%81%AE%E5%9C%A8%E3%82%8A%E6%96%B9%E3%80%80%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%A4%E3%83%B3%E3%82%BA/'
         }
       ]
     },
