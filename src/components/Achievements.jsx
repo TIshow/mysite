@@ -34,6 +34,14 @@ function Achievements() {
             ja: '日本証券新聞社によるインタビュー「AI時代のIR発信の在り方　シュタインズ 齊藤大将代表取締役に聞く」'
           },
           url: 'https://www.nsjournal.jp/%E3%80%90%E9%80%9F%E5%A0%B1%E7%89%88%E3%80%91ai%E6%99%82%E4%BB%A3%E3%81%AEir%E7%99%BA%E4%BF%A1%E3%81%AE%E5%9C%A8%E3%82%8A%E6%96%B9%E3%80%80%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%A4%E3%83%B3%E3%82%BA/'
+        },
+        {
+          category: { en: 'Media', ja: 'メディア' },
+          title: {
+            en: 'Featured by Island Times: "Virtual Gallery Project Opens New Digital Stage for Palauan Artists"',
+            ja: 'Island Timesに取材掲載「Virtual Gallery Project Opens New Digital Stage for Palauan Artists（パラオのアーティストに新たなデジタルの舞台を開くバーチャルギャラリープロジェクト）」'
+          },
+          url: 'https://islandtimes.org/virtual-gallery-project-opens-new-digital-stage-for-palauan-artists/'
         }
       ]
     },
